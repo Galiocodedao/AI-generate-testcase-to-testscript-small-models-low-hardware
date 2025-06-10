@@ -1,0 +1,89 @@
+/* AI Test Script Generator - Custom Styles */
+/* GTX 1660 Optimized Theme */
+
+:root {
+    --gpu-green: #10b981;
+    --ai-blue: #2563eb;
+    --performance-purple: #8b5cf6;
+    --success-green: #059669;
+}
+
+/* Custom animations */
+@keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+}
+
+@keyframes pulse-glow {
+    0%, 100% { box-shadow: 0 0 5px rgba(37, 99, 235, 0.3); }
+    50% { box-shadow: 0 0 20px rgba(37, 99, 235, 0.6); }
+}
+
+.floating-icon {
+    animation: float 3s ease-in-out infinite;
+}
+
+.pulse-glow {
+    animation: pulse-glow 2s ease-in-out infinite;
+}
+
+/* Custom utilities */
+.text-gpu { color: var(--gpu-green) !important; }
+.text-ai { color: var(--ai-blue) !important; }
+.text-performance { color: var(--performance-purple) !important; }
+
+.bg-gpu { background-color: var(--gpu-green) !important; }
+.bg-ai { background-color: var(--ai-blue) !important; }
+.bg-performance { background-color: var(--performance-purple) !important; }
+
+/* Code syntax highlighting enhancements */
+.language-java .token.keyword { color: #ff79c6; }
+.language-java .token.string { color: #f1fa8c; }
+.language-java .token.comment { color: #6272a4; }
+.language-java .token.function { color: #50fa7b; }
+
+/* Loading states */
+.loading-dots::after {
+    content: '';
+    animation: dots 1.5s steps(5, end) infinite;
+}
+
+@keyframes dots {
+    0%, 20% { content: '.'; }
+    40% { content: '..'; }
+    60% { content: '...'; }
+    80%, 100% { content: ''; }
+}
+
+/* Responsive improvements */
+@media (max-width: 576px) {
+    .display-4 { font-size: 2rem; }
+    .display-5 { font-size: 1.75rem; }
+    .lead { font-size: 1rem; }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f5f9;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--ai-blue);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #1d4ed8;
+}
+
+/* Print styles */
+@media print {
+    .navbar, .copy-btn, .btn { display: none !important; }
+    .main-container { box-shadow: none; margin: 0; }
+    pre { background: #f8f9fa !important; color: #000 !important; }
+}

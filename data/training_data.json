@@ -1,0 +1,279 @@
+{
+  "pairs": [
+    {
+      "text1": "Open the login dialog by clicking on 'Login' button",
+      "text2": "Click on a button",
+      "similarity": 0.9
+    },
+    {
+      "text1": "Open the login dialog by clicking on 'Login' button",
+      "text2": "Check if a button is enabled",
+      "similarity": 0.9
+    },
+    {
+      "text1": "Open the login dialog by clicking on 'Login' button",
+      "text2": "Check if a button exists",
+      "similarity": 0.9
+    },
+    {
+      "text1": "Open the login dialog by clicking on 'Login' button",
+      "text2": "Click on a menu item",
+      "similarity": 0.1
+    },
+    {
+      "text1": "Enter 'admin' in the username field",
+      "text2": "Enter text in a field",
+      "similarity": 0.9
+    },
+    {
+      "text1": "Enter 'admin' in the username field",
+      "text2": "Clear a text field",
+      "similarity": 0.1
+    },
+    {
+      "text1": "Enter 'admin' in the username field",
+      "text2": "Select an item from a labeled combobox",
+      "similarity": 0.1
+    },
+    {
+      "text1": "Enter 'admin' in the username field",
+      "text2": "Open a view by title",
+      "similarity": 0.1
+    },
+    {
+      "text1": "Enter 'admin' in the username field",
+      "text2": "Verify element exists",
+      "similarity": 0.1
+    },
+    {
+      "text1": "Enter 'admin' in the username field",
+      "text2": "Wait for a condition",
+      "similarity": 0.1
+    },
+    {
+      "text1": "Enter 'password123' in the password field",
+      "text2": "Enter text in a field",
+      "similarity": 0.9
+    },
+    {
+      "text1": "Enter 'password123' in the password field",
+      "text2": "Uncheck a checkbox",
+      "similarity": 0.1
+    },
+    {
+      "text1": "Enter 'password123' in the password field",
+      "text2": "Select a row in a table",
+      "similarity": 0.1
+    },
+    {
+      "text1": "Click on the 'Submit' button",
+      "text2": "Click on a button",
+      "similarity": 0.9
+    },
+    {
+      "text1": "Click on the 'Submit' button",
+      "text2": "Check if a button is enabled",
+      "similarity": 0.9
+    },
+    {
+      "text1": "Click on the 'Submit' button",
+      "text2": "Check if a button exists",
+      "similarity": 0.9
+    },
+    {
+      "text1": "Click on the 'Submit' button",
+      "text2": "Uncheck a checkbox",
+      "similarity": 0.1
+    },
+    {
+      "text1": "Click on the 'Submit' button",
+      "text2": "Close a dialog or window",
+      "similarity": 0.1
+    },
+    {
+      "text1": "Click on the 'Submit' button",
+      "text2": "Close a view",
+      "similarity": 0.1
+    },
+    {
+      "text1": "Verify that the welcome message is displayed",
+      "text2": "Check a checkbox",
+      "similarity": 0.1
+    },
+    {
+      "text1": "Verify that the welcome message is displayed",
+      "text2": "Uncheck a checkbox",
+      "similarity": 0.1
+    },
+    {
+      "text1": "Verify that the welcome message is displayed",
+      "text2": "Collapse a tree node",
+      "similarity": 0.1
+    },
+    {
+      "text1": "Verify that the welcome message is displayed",
+      "text2": "Close a dialog or window",
+      "similarity": 0.1
+    },
+    {
+      "text1": "Verify that the welcome message is displayed",
+      "text2": "Verify text exists on screen",
+      "similarity": 0.9
+    },
+    {
+      "text1": "Verify that the welcome message is displayed",
+      "text2": "Verify element exists",
+      "similarity": 0.9
+    },
+    {
+      "text1": "Click on 'File' menu",
+      "text2": "Click on a button",
+      "similarity": 0.9
+    },
+    {
+      "text1": "Click on 'File' menu",
+      "text2": "Check a checkbox",
+      "similarity": 0.1
+    },
+    {
+      "text1": "Click on 'File' menu",
+      "text2": "Uncheck a checkbox",
+      "similarity": 0.1
+    },
+    {
+      "text1": "Click on 'File' menu",
+      "text2": "Click on a menu item",
+      "similarity": 0.9
+    },
+    {
+      "text1": "Click on 'File' menu",
+      "text2": "Click on a submenu item",
+      "similarity": 0.9
+    },
+    {
+      "text1": "Click on 'New' submenu",
+      "text2": "Click on a button",
+      "similarity": 0.9
+    },
+    {
+      "text1": "Click on 'New' submenu",
+      "text2": "Uncheck a checkbox",
+      "similarity": 0.1
+    },
+    {
+      "text1": "Click on 'New' submenu",
+      "text2": "Select an item from a combobox",
+      "similarity": 0.1
+    },
+    {
+      "text1": "Click on 'New' submenu",
+      "text2": "Collapse a tree node",
+      "similarity": 0.1
+    },
+    {
+      "text1": "Click on 'New' submenu",
+      "text2": "Click on a menu item",
+      "similarity": 0.9
+    },
+    {
+      "text1": "Click on 'New' submenu",
+      "text2": "Click on a submenu item",
+      "similarity": 0.9
+    },
+    {
+      "text1": "Click on 'New' submenu",
+      "text2": "Verify text exists on screen",
+      "similarity": 0.1
+    },
+    {
+      "text1": "Click on 'Project' menu item",
+      "text2": "Click on a button",
+      "similarity": 0.9
+    },
+    {
+      "text1": "Click on 'Project' menu item",
+      "text2": "Click on a menu item",
+      "similarity": 0.9
+    },
+    {
+      "text1": "Click on 'Project' menu item",
+      "text2": "Click on a submenu item",
+      "similarity": 0.9
+    },
+    {
+      "text1": "Select 'Java Project' from the wizard",
+      "text2": "Click on a button",
+      "similarity": 0.1
+    },
+    {
+      "text1": "Select 'Java Project' from the wizard",
+      "text2": "Check if a button is enabled",
+      "similarity": 0.1
+    },
+    {
+      "text1": "Select 'Java Project' from the wizard",
+      "text2": "Enter text in a labeled field",
+      "similarity": 0.1
+    },
+    {
+      "text1": "Select 'Java Project' from the wizard",
+      "text2": "Check a checkbox",
+      "similarity": 0.1
+    },
+    {
+      "text1": "Enter 'TestProject' as the project name",
+      "text2": "Check if a button exists",
+      "similarity": 0.1
+    },
+    {
+      "text1": "Enter 'TestProject' as the project name",
+      "text2": "Enter text in a field",
+      "similarity": 0.9
+    },
+    {
+      "text1": "Enter 'TestProject' as the project name",
+      "text2": "Activate a dialog or window",
+      "similarity": 0.1
+    },
+    {
+      "text1": "Enter 'TestProject' as the project name",
+      "text2": "Close a view",
+      "similarity": 0.1
+    },
+    {
+      "text1": "Click on 'Finish' button",
+      "text2": "Click on a button",
+      "similarity": 0.9
+    },
+    {
+      "text1": "Click on 'Finish' button",
+      "text2": "Check if a button is enabled",
+      "similarity": 0.9
+    },
+    {
+      "text1": "Click on 'Finish' button",
+      "text2": "Check if a button exists",
+      "similarity": 0.9
+    },
+    {
+      "text1": "Click on 'Finish' button",
+      "text2": "Collapse a tree node",
+      "similarity": 0.1
+    },
+    {
+      "text1": "Verify that the project appears in the Project Explorer",
+      "text2": "Click on a menu item",
+      "similarity": 0.1
+    },
+    {
+      "text1": "Verify that the project appears in the Project Explorer",
+      "text2": "Verify text exists on screen",
+      "similarity": 0.9
+    },
+    {
+      "text1": "Verify that the project appears in the Project Explorer",
+      "text2": "Verify element exists",
+      "similarity": 0.9
+    }
+  ]
+}

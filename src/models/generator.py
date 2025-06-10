@@ -46,8 +46,7 @@ class TestScriptGenerator:
         except Exception as e:
             logger.error(f"Error loading model: {str(e)}")
             raise
-        
-        # Set up template environment
+          # Set up template environment
         template_dir = config.TEMPLATE_DIR
         self.template_name = template_path or config.DEFAULT_TEMPLATE
         
@@ -61,7 +60,8 @@ class TestScriptGenerator:
         self.swtbot_components = load_swtbot_components(custom_components_path)
         
         logger.info("Test Script Generator initialized successfully")
-      def _create_action_patterns(self) -> Dict[str, List[Dict]]:
+    
+    def _create_action_patterns(self) -> Dict[str, List[Dict]]:
         """
         Create regex patterns for identifying actions in test steps
         

@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 """
 Model training module for AI Test Script Generator
 """
