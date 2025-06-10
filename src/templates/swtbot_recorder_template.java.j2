@@ -1,0 +1,102 @@
+package org.eclipse.swtbot.test;
+
+import static org.junit.Assert.*;
+import org.eclipse.swtbot.swt.finder.SWTBot;
+import org.eclipse.swtbot.eclipse.finder.SWTWorkbenchBot;
+import org.eclipse.swtbot.swt.finder.junit.SWTBotJunit4ClassRunner;
+import org.eclipse.swtbot.swt.finder.utils.SWTBotPreferences;
+import org.eclipse.swtbot.swt.finder.widgets.*;
+import org.eclipse.swtbot.swt.finder.exceptions.WidgetNotFoundException;
+import org.eclipse.swtbot.swt.finder.waits.Conditions;
+import org.eclipse.swtbot.swt.finder.waits.DefaultCondition;
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+
+/**
+ * Auto-generated test from AI Test Script Generator
+ * {{ test_description }}
+ */
+@RunWith(SWTBotJunit4ClassRunner.class)
+public class {{ test_name }} {
+    
+    private SWTWorkbenchBot bot;
+    
+    @Before
+    public void setUp() throws Exception {
+        // Configure SWTBot preferences
+        SWTBotPreferences.PLAYBACK_DELAY = 100;
+        SWTBotPreferences.TIMEOUT = 10000;
+        
+        // Initialize bot
+        bot = new SWTWorkbenchBot();
+        
+        // Close welcome view if it exists
+        try {
+            bot.viewByTitle("Welcome").close();
+        } catch (WidgetNotFoundException e) {
+            // Welcome view not found, ignore
+        }
+        
+        // Additional setup code can be added here
+    }
+    
+    @Test
+    public void {{ test_method_name }}() throws Exception {
+        // Test steps
+        {% for code_line in code_lines %}
+        {{ code_line }};
+        {% endfor %}
+    }
+    
+    @After
+    public void tearDown() throws Exception {
+        // Clean up any open dialogs
+        while (tryCloseShell());
+    }
+    
+    /**
+     * Helper method to close any open dialogs
+     */
+    private boolean tryCloseShell() {
+        try {
+            SWTBotShell shell = bot.activeShell();
+            if (shell != null && shell.isOpen() && !shell.isActive()) {
+                shell.close();
+                return true;
+            }
+        } catch (Exception e) {
+            // Ignore exceptions
+        }
+        return false;
+    }
+    
+    /**
+     * Helper method to wait for a specific shell
+     */
+    private void waitForShell(String title) {
+        bot.waitUntil(Conditions.shellIsActive(title));
+    }
+    
+    /**
+     * Helper method to wait for a specific widget
+     */
+    private void waitForWidget(final SWTBotWidget<?> widget) {
+        bot.waitUntil(new DefaultCondition() {
+            @Override
+            public boolean test() {
+                try {
+                    return widget.isEnabled();
+                } catch (Exception e) {
+                    return false;
+                }
+            }
+            
+            @Override
+            public String getFailureMessage() {
+                return "Could not find widget or widget is not enabled";
+            }
+        });
+    }
+}

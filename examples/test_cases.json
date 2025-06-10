@@ -1,0 +1,64 @@
+{
+  "testCases": [
+    {
+      "name": "LoginTest",
+      "description": "Test the login functionality",
+      "steps": [
+        {
+          "id": 1,
+          "description": "Open the login dialog by clicking on 'Login' button"
+        },
+        {
+          "id": 2,
+          "description": "Enter 'admin' in the username field"
+        },
+        {
+          "id": 3,
+          "description": "Enter 'password123' in the password field"
+        },
+        {
+          "id": 4,
+          "description": "Click on the 'Submit' button"
+        },
+        {
+          "id": 5,
+          "description": "Verify that the welcome message is displayed"
+        }
+      ]
+    },
+    {
+      "name": "CreateProjectTest",
+      "description": "Test creating a new project",
+      "steps": [
+        {
+          "id": 1,
+          "description": "Click on 'File' menu"
+        },
+        {
+          "id": 2,
+          "description": "Click on 'New' submenu"
+        },
+        {
+          "id": 3,
+          "description": "Click on 'Project' menu item"
+        },
+        {
+          "id": 4,
+          "description": "Select 'Java Project' from the wizard"
+        },
+        {
+          "id": 5,
+          "description": "Enter 'TestProject' as the project name"
+        },
+        {
+          "id": 6,
+          "description": "Click on 'Finish' button"
+        },
+        {
+          "id": 7,
+          "description": "Verify that the project appears in the Project Explorer"
+        }
+      ]
+    }
+  ]
+}

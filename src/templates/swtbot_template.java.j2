@@ -1,0 +1,57 @@
+package org.eclipse.swtbot.test;
+
+import static org.junit.Assert.*;
+
+import org.eclipse.swtbot.eclipse.finder.SWTWorkbenchBot;
+import org.eclipse.swtbot.eclipse.finder.widgets.SWTBotView;
+import org.eclipse.swtbot.eclipse.finder.widgets.SWTBotEditor;
+import org.eclipse.swtbot.swt.finder.widgets.SWTBotShell;
+import org.eclipse.swtbot.swt.finder.widgets.SWTBotTree;
+import org.eclipse.swtbot.swt.finder.widgets.SWTBotTreeItem;
+import org.eclipse.swtbot.swt.finder.junit.SWTBotJunit4ClassRunner;
+import org.eclipse.swtbot.swt.finder.utils.SWTBotPreferences;
+import org.eclipse.swtbot.swt.finder.waits.DefaultCondition;
+import org.junit.AfterClass;
+import org.junit.BeforeClass;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+
+/**
+ * {{ test_description }}
+ */
+@RunWith(SWTBotJunit4ClassRunner.class)
+public class {{ test_name }} {
+    
+    private static SWTWorkbenchBot bot;
+    
+    @BeforeClass
+    public static void beforeClass() {
+        // Set timeout to avoid test failures on slow machines
+        SWTBotPreferences.TIMEOUT = 10000;
+        SWTBotPreferences.PLAYBACK_DELAY = 100;
+        
+        // Initialize the bot
+        bot = new SWTWorkbenchBot();
+        
+        // Close welcome view if it exists
+        try {
+            SWTBotView welcomeView = bot.viewByTitle("Welcome");
+            welcomeView.close();
+        } catch (Exception e) {
+            // Welcome view not found, ignore
+        }
+    }
+    
+    @Test
+    public void {{ test_method_name }}() {
+        // Test steps
+        {% for code_line in code_lines %}
+        {{ code_line }};
+        {% endfor %}
+    }
+    
+    @AfterClass
+    public static void afterClass() {
+        // Clean up resources if needed
+    }
+}

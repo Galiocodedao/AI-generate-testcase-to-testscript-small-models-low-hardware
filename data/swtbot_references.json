@@ -1,0 +1,174 @@
+{
+  "button": [
+    {
+      "description": "Click on a button",
+      "method": "bot.button(\"{name}\").click()",
+      "keywords": ["click", "press", "push", "select button"],
+      "priority": 1
+    },
+    {
+      "description": "Check if a button is enabled",
+      "method": "assertTrue(bot.button(\"{name}\").isEnabled())",
+      "keywords": ["check button", "verify button", "enabled button"],
+      "priority": 2
+    },
+    {
+      "description": "Check if a button exists",
+      "method": "assertTrue(bot.button(\"{name}\").isVisible())",
+      "keywords": ["exists button", "visible button"],
+      "priority": 3
+    }
+  ],
+  "text": [
+    {
+      "description": "Enter text in a field",
+      "method": "bot.text({index}).setText(\"{value}\")",
+      "keywords": ["enter", "type", "input", "set text"],
+      "priority": 1
+    },
+    {
+      "description": "Enter text in a labeled field",
+      "method": "bot.textWithLabel(\"{label}\").setText(\"{value}\")",
+      "keywords": ["enter in field", "type in field", "labeled field"],
+      "priority": 1
+    },
+    {
+      "description": "Clear a text field",
+      "method": "bot.text({index}).setText(\"\")",
+      "keywords": ["clear", "empty", "erase"],
+      "priority": 2
+    }
+  ],
+  "checkbox": [
+    {
+      "description": "Check a checkbox",
+      "method": "bot.checkBox(\"{name}\").select()",
+      "keywords": ["check", "select checkbox"],
+      "priority": 1
+    },
+    {
+      "description": "Uncheck a checkbox",
+      "method": "bot.checkBox(\"{name}\").deselect()",
+      "keywords": ["uncheck", "deselect checkbox", "clear checkbox"],
+      "priority": 2
+    }
+  ],
+  "combobox": [
+    {
+      "description": "Select an item from a combobox",
+      "method": "bot.comboBox({index}).setSelection(\"{value}\")",
+      "keywords": ["select from combobox", "choose from dropdown", "dropdown"],
+      "priority": 1
+    },
+    {
+      "description": "Select an item from a labeled combobox",
+      "method": "bot.comboBoxWithLabel(\"{label}\").setSelection(\"{value}\")",
+      "keywords": ["select from labeled combobox", "choose from labeled dropdown"],
+      "priority": 1
+    }
+  ],
+  "tree": [
+    {
+      "description": "Select an item from a tree",
+      "method": "bot.tree().select(\"{path}\")",
+      "keywords": ["select tree item", "choose from tree", "tree select"],
+      "priority": 1
+    },
+    {
+      "description": "Expand a tree node",
+      "method": "bot.tree().expandNode(\"{path}\")",
+      "keywords": ["expand tree", "open tree", "expand node"],
+      "priority": 2
+    },
+    {
+      "description": "Collapse a tree node",
+      "method": "bot.tree().collapseNode(\"{path}\")",
+      "keywords": ["collapse tree", "close tree", "collapse node"],
+      "priority": 3
+    }
+  ],
+  "menu": [
+    {
+      "description": "Click on a menu item",
+      "method": "bot.menu(\"{name}\").click()",
+      "keywords": ["click menu", "select menu", "open menu"],
+      "priority": 1
+    },
+    {
+      "description": "Click on a submenu item",
+      "method": "bot.menu(\"{menuName}\").menu(\"{submenuName}\").click()",
+      "keywords": ["submenu", "click submenu", "select submenu"],
+      "priority": 2
+    }
+  ],
+  "shell": [
+    {
+      "description": "Close a dialog or window",
+      "method": "bot.shell(\"{name}\").close()",
+      "keywords": ["close dialog", "close window", "close shell"],
+      "priority": 1
+    },
+    {
+      "description": "Activate a dialog or window",
+      "method": "bot.shell(\"{name}\").activate()",
+      "keywords": ["activate dialog", "focus window", "focus shell"],
+      "priority": 2
+    }
+  ],
+  "view": [
+    {
+      "description": "Open a view by title",
+      "method": "bot.viewByTitle(\"{title}\").show()",
+      "keywords": ["open view", "show view", "display view"],
+      "priority": 1
+    },
+    {
+      "description": "Close a view",
+      "method": "bot.viewByTitle(\"{title}\").close()",
+      "keywords": ["close view", "hide view"],
+      "priority": 2
+    }
+  ],
+  "verification": [
+    {
+      "description": "Verify text exists on screen",
+      "method": "assertTrue(\"Message should contain expected text\", bot.label().getText().contains(\"{text}\"))",
+      "keywords": ["verify", "check text", "assert text", "text exists", "text appears", "text is displayed"],
+      "priority": 1
+    },
+    {
+      "description": "Verify element exists",
+      "method": "assertTrue(\"Element should exist\", bot.{element}(\"{name}\").isVisible())",
+      "keywords": ["verify exists", "check exists", "element exists", "appears", "is displayed"],
+      "priority": 2
+    }
+  ],
+  "wait": [
+    {
+      "description": "Wait for a condition",
+      "method": "bot.waitUntil(new DefaultCondition() {\n\t@Override\n\tpublic boolean test() {\n\t\treturn {condition};\n\t}\n\t@Override\n\tpublic String getFailureMessage() {\n\t\treturn \"Condition not met\";\n\t}\n})",
+      "keywords": ["wait", "wait for", "wait until", "wait while"],
+      "priority": 1
+    },
+    {
+      "description": "Wait for a specified time",
+      "method": "bot.sleep({timeoutMs})",
+      "keywords": ["sleep", "wait time", "pause"],
+      "priority": 2
+    }
+  ],
+  "table": [
+    {
+      "description": "Select a row in a table",
+      "method": "bot.table().select({rowIndex})",
+      "keywords": ["select row", "select table row", "choose row"],
+      "priority": 1
+    },
+    {
+      "description": "Select a cell in a table",
+      "method": "bot.table().click({rowIndex}, {columnIndex})",
+      "keywords": ["select cell", "click cell", "table cell"],
+      "priority": 2
+    }
+  ]
+}
